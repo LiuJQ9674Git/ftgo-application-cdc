@@ -1,0 +1,14 @@
+Table 'ftgo_order_service.saga_instance' doesn't exist
+
+
+
+0.19.0.RELEASE
+
+https://raw.githubusercontent.com/eventuate-foundation/eventuate-common/0.15.0.RELEASE/mysql/1.initialize-database.sql
+
+https://raw.githubusercontent.com/eventuate-foundation/eventuate-common/0.15.0.RELEASE/mysql/2.initialize-database.sql
+
+https://raw.githubusercontent.com/eventuate-tram/eventuate-tram-sagas/0.19.0.RELEASE/mysql/tram-saga-schema.sql
+
+
+ curl -X POST "http://localhost:8080/orders" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"consumerId\": 0, \"deliveryAddress\": { \"city\": \"bj\", \"state\": \"bj\", \"street1\": \"bj\", \"street2\": \"bj\", \"zip\": \"jj\" }, \"deliveryTime\": \"2023-03-11T00:08:11.559Z\", \"lineItems\": [ { \"menuItemId\": \"1\", \"quantity\": 1 } ], \"restaurantId\": 1}"
